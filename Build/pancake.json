@@ -1,0 +1,11 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "pancake.data.unityweb",
+"asmCodeUrl": "pancake.asm.code.unityweb",
+"asmMemoryUrl": "pancake.asm.memory.unityweb",
+"asmFrameworkUrl": "pancake.asm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF"
+}
