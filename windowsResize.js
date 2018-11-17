@@ -15,4 +15,4 @@ function ChangeCanvasSize() {
   setTimeout(ChangeCanvasSize, 100);
 }
 
-ChangeCanvasSize();
+setTimeout(ChangeCanvasSize, 1000);
