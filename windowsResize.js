@@ -5,13 +5,13 @@ function ChangeCanvasSize() {
   var elem = document.getElementById('#canvas');
   var height = document.body.clientHeight;
   var width = document.body.clientWidth;
-  
+
   if (height != height_b || width != width_b) {
-    elem.setAttribute("height", height.toString());
-    elem.setAttribute("width", width.toString());
+    elem.setAttribute("height", this.height.toString());
+    elem.setAttribute("width", this.width.toString());
   }
-  
-  height_b = height;
+
+  height_b = hieght;
   width_b = width;
   setTimeout(ChangeCanvasSize, 100);
 }
