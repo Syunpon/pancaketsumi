@@ -1,5 +1,5 @@
-var game_height_b = document.body.clientHeight;
-var game_width_b = document.body.clientWidth;
+var game_height_b;
+var game_width_b;
 
 function ChangeCanvasSize() {
   var game_height = window.innerHeight;
