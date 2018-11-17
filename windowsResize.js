@@ -11,7 +11,7 @@ function ChangeCanvasSize() {
     elem.setAttribute("width", width.toString());
   }
   
-  height_b = hieght;
+  height_b = height;
   width_b = width;
   setTimeout(ChangeCanvasSize, 100);
 }
