@@ -1,37 +1,17 @@
-var container;
-var canvas;
-var timer = 0;
-//初期化
-function init() {
-canvas = document.getElementById('gameContainer');
-container = document.createElement('div');
-container.style.width = window.innerWidth + 'px';
-container.style.height = window.innerHeight + 'px';
-container.style.overflow = 'hidden';
-container.appendChild(canvas);
-document.body.appendChild(container);
-document.body.style.margin = '0px'
-}
-//サイズ変更処理
-function resize() {
-container.style.width = window.innerWidth + 'px';
-container.style.height = window.innerHeight + 'px';
-canvas.width = window.innerWidth * window.devicePixelRatio;
-canvas.height = window.innerHeight * window.devicePixelRatio;
-}
-window.onload = function () {
-init();
-resize();
-};
+var height_b = document.body.clientHeight;
+var width_b = document.body.clientWidth;
 
-window.onresize = function () {
-resize();
-};
+function ChangeCanvasSize() {
+  var elem = document.getElementById('#canvas');
+  var height = document.body.clientHeight;
+  var width = document.body.clientWidth;
+  
+  if (height != height_b || width != width_b) {
+    elem.setAttribute("height", height.toString());
+    elem.setAttribute("width", width.toString());
+  }
 
-//ブラウザの大きさが変わった時に行う処理
-(function () {
-var timer = 0;
-window.onresize = function () {
-resize();
-};
-}());
+  setTimeout(ChangeCanvasSize, 100);
+}
+
+ChangeCanvasSize();
