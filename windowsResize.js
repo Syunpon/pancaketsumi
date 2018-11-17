@@ -9,11 +9,12 @@ function ChangeCanvasSize() {
     if (document.getElementById('#canvas') != null) {
       document.getElementById('#canvas').height = game_height;
       document.getElementById('#canvas').width = game_width;
+
+      game_height_b = game_height;
+      game_width_b = game_width;
     }
   }
 
-  game_height_b = game_height;
-  game_width_b = game_width;
   setTimeout(ChangeCanvasSize, 16);
 }
 
