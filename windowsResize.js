@@ -7,8 +7,8 @@ function ChangeCanvasSize() {
 
   if (game_height != game_height_b || game_width != game_width_b) {
     if (!document.getElementById('#canvas')) {
-      document.getElementById('#canvas').height = game_height;
-      document.getElementById('#canvas').width = game_width;
+      document.getElementById('#canvas').clientHeight = game_height;
+      document.getElementById('#canvas').clientWidth = game_width;
     }
   }
 
