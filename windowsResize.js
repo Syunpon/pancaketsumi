@@ -1,18 +1,18 @@
-var height_b = document.body.clientHeight;
-var width_b = document.body.clientWidth;
+var game_height_b = document.body.clientHeight;
+var game_width_b = document.body.clientWidth;
 
 function ChangeCanvasSize() {
   var elem = document.getElementById('#canvas');
-  var height = document.body.clientHeight;
-  var width = document.body.clientWidth;
+  var game_height = document.body.clientHeight;
+  var game_width = document.body.clientWidth;
 
-  if (height != height_b || width != width_b) {
-    elem.setAttribute("height", this.height.toString());
-    elem.setAttribute("width", this.width.toString());
+  if (game_height != game_height_b || game_width != game_width_b) {
+    elem.setAttribute("height", game_height.toString());
+    elem.setAttribute("width", game_width.toString());
   }
 
-  height_b = height;
-  width_b = width;
+  game_height_b = game_height;
+  game_width_b = game_width;
   setTimeout(ChangeCanvasSize, 100);
 }
 
