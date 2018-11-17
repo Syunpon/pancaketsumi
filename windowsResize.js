@@ -4,17 +4,17 @@ var game_width_b = document.body.clientWidth;
 function ChangeCanvasSize() {
   var game_height = window.innerHeight;
   var game_width = window.innerWidth;
-  
+
   if (game_height != game_height_b || game_width != game_width_b) {
     if (!document.getElementById('#canvas')) {
-      document.getElementById('#canvas').setAttribute("height", game_height.toString());
-      document.getElementById('#canvas').setAttribute("width", game_width.toString());
+      document.getElementById('#canvas').height = game_height;
+      document.getElementById('#canvas').width = game_width;
     }
   }
-  
+
   game_height_b = game_height;
   game_width_b = game_width;
-  setTimeout(ChangeCanvasSize, 100);
+  setTimeout(ChangeCanvasSize, 16);
 }
 
 ChangeCanvasSize();
